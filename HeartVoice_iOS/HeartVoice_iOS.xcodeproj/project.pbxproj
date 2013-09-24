@@ -1,0 +1,306 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4900AC5517F1739F004851FB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4900AC5417F1739F004851FB /* UIKit.framework */; };
+		4900AC5717F1739F004851FB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4900AC5617F1739F004851FB /* Foundation.framework */; };
+		4900AC5917F1739F004851FB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4900AC5817F1739F004851FB /* CoreGraphics.framework */; };
+		4900AC5F17F1739F004851FB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4900AC5D17F1739F004851FB /* InfoPlist.strings */; };
+		4900AC6117F1739F004851FB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4900AC6017F1739F004851FB /* main.m */; };
+		4900AC6517F1739F004851FB /* HVAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4900AC6417F1739F004851FB /* HVAppDelegate.m */; };
+		4900AC6717F1739F004851FB /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 4900AC6617F1739F004851FB /* Default.png */; };
+		4900AC6917F1739F004851FB /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4900AC6817F1739F004851FB /* Default@2x.png */; };
+		4900AC6B17F1739F004851FB /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4900AC6A17F1739F004851FB /* Default-568h@2x.png */; };
+		4900AC6E17F1739F004851FB /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4900AC6C17F1739F004851FB /* MainStoryboard.storyboard */; };
+		4900AC7117F1739F004851FB /* HVViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4900AC7017F1739F004851FB /* HVViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4900AC5117F1739F004851FB /* HeartVoice_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeartVoice_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4900AC5417F1739F004851FB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		4900AC5617F1739F004851FB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		4900AC5817F1739F004851FB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		4900AC5C17F1739F004851FB /* HeartVoice_iOS-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HeartVoice_iOS-Info.plist"; sourceTree = "<group>"; };
+		4900AC5E17F1739F004851FB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4900AC6017F1739F004851FB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4900AC6217F1739F004851FB /* HeartVoice_iOS-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HeartVoice_iOS-Prefix.pch"; sourceTree = "<group>"; };
+		4900AC6317F1739F004851FB /* HVAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HVAppDelegate.h; sourceTree = "<group>"; };
+		4900AC6417F1739F004851FB /* HVAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HVAppDelegate.m; sourceTree = "<group>"; };
+		4900AC6617F1739F004851FB /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		4900AC6817F1739F004851FB /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		4900AC6A17F1739F004851FB /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		4900AC6D17F1739F004851FB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		4900AC6F17F1739F004851FB /* HVViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HVViewController.h; sourceTree = "<group>"; };
+		4900AC7017F1739F004851FB /* HVViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HVViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4900AC4E17F1739F004851FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4900AC5517F1739F004851FB /* UIKit.framework in Frameworks */,
+				4900AC5717F1739F004851FB /* Foundation.framework in Frameworks */,
+				4900AC5917F1739F004851FB /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4900AC4817F1739F004851FB = {
+			isa = PBXGroup;
+			children = (
+				4900AC5A17F1739F004851FB /* HeartVoice_iOS */,
+				4900AC5317F1739F004851FB /* Frameworks */,
+				4900AC5217F1739F004851FB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4900AC5217F1739F004851FB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4900AC5117F1739F004851FB /* HeartVoice_iOS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4900AC5317F1739F004851FB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4900AC5417F1739F004851FB /* UIKit.framework */,
+				4900AC5617F1739F004851FB /* Foundation.framework */,
+				4900AC5817F1739F004851FB /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4900AC5A17F1739F004851FB /* HeartVoice_iOS */ = {
+			isa = PBXGroup;
+			children = (
+				4900AC6317F1739F004851FB /* HVAppDelegate.h */,
+				4900AC6417F1739F004851FB /* HVAppDelegate.m */,
+				4900AC6C17F1739F004851FB /* MainStoryboard.storyboard */,
+				4900AC6F17F1739F004851FB /* HVViewController.h */,
+				4900AC7017F1739F004851FB /* HVViewController.m */,
+				4900AC5B17F1739F004851FB /* Supporting Files */,
+			);
+			path = HeartVoice_iOS;
+			sourceTree = "<group>";
+		};
+		4900AC5B17F1739F004851FB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4900AC5C17F1739F004851FB /* HeartVoice_iOS-Info.plist */,
+				4900AC5D17F1739F004851FB /* InfoPlist.strings */,
+				4900AC6017F1739F004851FB /* main.m */,
+				4900AC6217F1739F004851FB /* HeartVoice_iOS-Prefix.pch */,
+				4900AC6617F1739F004851FB /* Default.png */,
+				4900AC6817F1739F004851FB /* Default@2x.png */,
+				4900AC6A17F1739F004851FB /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4900AC5017F1739F004851FB /* HeartVoice_iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4900AC7417F1739F004851FB /* Build configuration list for PBXNativeTarget "HeartVoice_iOS" */;
+			buildPhases = (
+				4900AC4D17F1739F004851FB /* Sources */,
+				4900AC4E17F1739F004851FB /* Frameworks */,
+				4900AC4F17F1739F004851FB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HeartVoice_iOS;
+			productName = HeartVoice_iOS;
+			productReference = 4900AC5117F1739F004851FB /* HeartVoice_iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4900AC4917F1739F004851FB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = HV;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = zhuchen;
+			};
+			buildConfigurationList = 4900AC4C17F1739F004851FB /* Build configuration list for PBXProject "HeartVoice_iOS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 4900AC4817F1739F004851FB;
+			productRefGroup = 4900AC5217F1739F004851FB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4900AC5017F1739F004851FB /* HeartVoice_iOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4900AC4F17F1739F004851FB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4900AC5F17F1739F004851FB /* InfoPlist.strings in Resources */,
+				4900AC6717F1739F004851FB /* Default.png in Resources */,
+				4900AC6917F1739F004851FB /* Default@2x.png in Resources */,
+				4900AC6B17F1739F004851FB /* Default-568h@2x.png in Resources */,
+				4900AC6E17F1739F004851FB /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4900AC4D17F1739F004851FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4900AC6117F1739F004851FB /* main.m in Sources */,
+				4900AC6517F1739F004851FB /* HVAppDelegate.m in Sources */,
+				4900AC7117F1739F004851FB /* HVViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4900AC5D17F1739F004851FB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4900AC5E17F1739F004851FB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		4900AC6C17F1739F004851FB /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4900AC6D17F1739F004851FB /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4900AC7217F1739F004851FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		4900AC7317F1739F004851FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4900AC7517F1739F004851FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HeartVoice_iOS/HeartVoice_iOS-Prefix.pch";
+				INFOPLIST_FILE = "HeartVoice_iOS/HeartVoice_iOS-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		4900AC7617F1739F004851FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HeartVoice_iOS/HeartVoice_iOS-Prefix.pch";
+				INFOPLIST_FILE = "HeartVoice_iOS/HeartVoice_iOS-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4900AC4C17F1739F004851FB /* Build configuration list for PBXProject "HeartVoice_iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4900AC7217F1739F004851FB /* Debug */,
+				4900AC7317F1739F004851FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4900AC7417F1739F004851FB /* Build configuration list for PBXNativeTarget "HeartVoice_iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4900AC7517F1739F004851FB /* Debug */,
+				4900AC7617F1739F004851FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4900AC4917F1739F004851FB /* Project object */;
+}
