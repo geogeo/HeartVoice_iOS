@@ -92,7 +92,6 @@
 - (void) onEnd:(IFlySynthesizerView *)iFlySynthesizerView error:(IFlySpeechError *)error
 {
     _readButton.enabled = YES;
-    [_iFlySynthesizerView stopSpeaking];
     NSLog(@"synthesize over");
     
 }
