@@ -18,6 +18,11 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    CGRect frame = [[UIScreen mainScreen] applicationFrame];
+    _sttView = [[sttView alloc] initWithFrame:frame];
+    self.title = @"心声";
+
 }
 
 - (void)didReceiveMemoryWarning
@@ -26,4 +31,11 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(void) loadView{
+    self.view=_sttView;
+}
+
+
 @end
+
+

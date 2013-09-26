@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "sttView.h"
 
-@interface HVViewController : UIViewController
+
+@interface HVViewController : UIViewController{
+    UIView *_sttView;
+}
 
 @end

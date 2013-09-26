@@ -18,6 +18,13 @@
 		4900AC6B17F1739F004851FB /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4900AC6A17F1739F004851FB /* Default-568h@2x.png */; };
 		4900AC6E17F1739F004851FB /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4900AC6C17F1739F004851FB /* MainStoryboard.storyboard */; };
 		4900AC7117F1739F004851FB /* HVViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4900AC7017F1739F004851FB /* HVViewController.m */; };
+		4900AC7817F40482004851FB /* iflyMSC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4900AC7717F40482004851FB /* iflyMSC.framework */; };
+		4900AC7E17F44341004851FB /* sttView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4900AC7D17F44340004851FB /* sttView.m */; };
+		4900AC8817F45121004851FB /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4900AC8717F45121004851FB /* SystemConfiguration.framework */; };
+		4900AC8A17F4512D004851FB /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4900AC8917F4512D004851FB /* QuartzCore.framework */; };
+		4900AC8E17F45189004851FB /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4900AC8D17F45189004851FB /* AudioToolbox.framework */; };
+		4900AC9017F45591004851FB /* icon 114.png in Resources */ = {isa = PBXBuildFile; fileRef = 4900AC8F17F45591004851FB /* icon 114.png */; };
+		4900AC9217F455AD004851FB /* icon 57.png in Resources */ = {isa = PBXBuildFile; fileRef = 4900AC9117F455AD004851FB /* icon 57.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +44,14 @@
 		4900AC6D17F1739F004851FB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		4900AC6F17F1739F004851FB /* HVViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HVViewController.h; sourceTree = "<group>"; };
 		4900AC7017F1739F004851FB /* HVViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HVViewController.m; sourceTree = "<group>"; };
+		4900AC7717F40482004851FB /* iflyMSC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = iflyMSC.framework; sourceTree = "<group>"; };
+		4900AC7C17F44340004851FB /* sttView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sttView.h; sourceTree = "<group>"; };
+		4900AC7D17F44340004851FB /* sttView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = sttView.m; sourceTree = "<group>"; };
+		4900AC8717F45121004851FB /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		4900AC8917F4512D004851FB /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		4900AC8D17F45189004851FB /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		4900AC8F17F45591004851FB /* icon 114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon 114.png"; sourceTree = "<group>"; };
+		4900AC9117F455AD004851FB /* icon 57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon 57.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,9 +59,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4900AC8E17F45189004851FB /* AudioToolbox.framework in Frameworks */,
+				4900AC8A17F4512D004851FB /* QuartzCore.framework in Frameworks */,
+				4900AC8817F45121004851FB /* SystemConfiguration.framework in Frameworks */,
 				4900AC5517F1739F004851FB /* UIKit.framework in Frameworks */,
 				4900AC5717F1739F004851FB /* Foundation.framework in Frameworks */,
 				4900AC5917F1739F004851FB /* CoreGraphics.framework in Frameworks */,
+				4900AC7817F40482004851FB /* iflyMSC.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +75,12 @@
 		4900AC4817F1739F004851FB = {
 			isa = PBXGroup;
 			children = (
+				4900AC9117F455AD004851FB /* icon 57.png */,
+				4900AC8F17F45591004851FB /* icon 114.png */,
+				4900AC8D17F45189004851FB /* AudioToolbox.framework */,
+				4900AC7717F40482004851FB /* iflyMSC.framework */,
+				4900AC8917F4512D004851FB /* QuartzCore.framework */,
+				4900AC8717F45121004851FB /* SystemConfiguration.framework */,
 				4900AC5A17F1739F004851FB /* HeartVoice_iOS */,
 				4900AC5317F1739F004851FB /* Frameworks */,
 				4900AC5217F1739F004851FB /* Products */,
@@ -88,6 +113,8 @@
 				4900AC6C17F1739F004851FB /* MainStoryboard.storyboard */,
 				4900AC6F17F1739F004851FB /* HVViewController.h */,
 				4900AC7017F1739F004851FB /* HVViewController.m */,
+				4900AC7C17F44340004851FB /* sttView.h */,
+				4900AC7D17F44340004851FB /* sttView.m */,
 				4900AC5B17F1739F004851FB /* Supporting Files */,
 			);
 			path = HeartVoice_iOS;
@@ -164,6 +191,8 @@
 				4900AC6917F1739F004851FB /* Default@2x.png in Resources */,
 				4900AC6B17F1739F004851FB /* Default-568h@2x.png in Resources */,
 				4900AC6E17F1739F004851FB /* MainStoryboard.storyboard in Resources */,
+				4900AC9017F45591004851FB /* icon 114.png in Resources */,
+				4900AC9217F455AD004851FB /* icon 57.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,6 +206,7 @@
 				4900AC6117F1739F004851FB /* main.m in Sources */,
 				4900AC6517F1739F004851FB /* HVAppDelegate.m in Sources */,
 				4900AC7117F1739F004851FB /* HVViewController.m in Sources */,
+				4900AC7E17F44341004851FB /* sttView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +291,10 @@
 		4900AC7517F1739F004851FB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HeartVoice_iOS/HeartVoice_iOS-Prefix.pch";
 				INFOPLIST_FILE = "HeartVoice_iOS/HeartVoice_iOS-Info.plist";
@@ -272,6 +306,10 @@
 		4900AC7617F1739F004851FB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HeartVoice_iOS/HeartVoice_iOS-Prefix.pch";
 				INFOPLIST_FILE = "HeartVoice_iOS/HeartVoice_iOS-Info.plist";
