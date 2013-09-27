@@ -19,14 +19,12 @@
 
 @interface sttView : UIView <IFlyRecognizerViewDelegate,IFlySynthesizerViewDelegate, UITextViewDelegate, IFlySpeechSynthesizerDelegate>
 {
-    UITextView                      *_textView;
-    IFlyRecognizerView              *_iFlyRecognizerView;
-    IFlySynthesizerView             *_iFlySynthesizerView;
-    IFlySpeechSynthesizer           *_iFlySpeechSynthesizer;
-    UIButton                        *_readButton;
+    UITextView                 *_textView;
+    IFlyRecognizerView         *_iFlyRecognizerView;
+    IFlySynthesizerView        *_iFlySynthesizerView;
+    IFlySpeechSynthesizer      *_iFlySpeechSynthesizer;
+    UIButton                   *_readButton;
+    UIButton                    *_clearButton;
 }
-
-
-- (void) setText:(NSString *) text;
 
 @end

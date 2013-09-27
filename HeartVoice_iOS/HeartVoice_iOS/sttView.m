@@ -39,12 +39,20 @@
         
         //set and add readButton
         _readButton =[UIButton buttonWithType:UIButtonTypeRoundedRect];
-        _readButton.frame = CGRectMake(10,205,300,44);
+        _readButton.frame = CGRectMake(160,205,150,44);
         _readButton.titleLabel.font = [UIFont boldSystemFontOfSize:16];
         [_readButton setTitle:@"朗读" forState:UIControlStateNormal];
         //[_readButton addTarget:self action:@selector(onRead:) forControlEvents:UIControlEventTouchUpInside];
         [_readButton addTarget:self action:@selector(onReadWithOutUI:) forControlEvents:UIControlEventTouchUpInside];
         [self addSubview:_readButton];
+        
+        //set and add clear Button
+        _clearButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+        _clearButton.frame = CGRectMake(10, 205, 145, 44);
+        _clearButton.titleLabel.font=[UIFont boldSystemFontOfSize:16];
+        [_clearButton setTitle:@"清除" forState:UIControlStateNormal];
+        [_clearButton addTarget:self action:@selector(onClear:) forControlEvents:UIControlEventTouchUpInside];
+        [self addSubview:_clearButton];
         
         //set iFlyRecognizerView
         NSString *initString = [[NSString alloc] initWithFormat:@"appid=%@", APPID ];
@@ -73,13 +81,24 @@
 }
 */
 
-- (void) setText:(NSString *) text
+- (void) onClear:(id)sender
 {
-    _textView.text = text;
+    _textView.text = Nil;
+}
+
+//无UI合成
+- (void) onReadWithOutUI:(id) sender{
+    _readButton.enabled=NO;
+    /*[_iFlySpeechSynthesizer setParameter:@"speed" value:@"60"];
+     [_iFlySpeechSynthesizer setParameter:@"volume" value:@"100"];
+     [_iFlySpeechSynthesizer setParameter:@"voice_name" value:@"xiaoyu"];
+     [_iFlySpeechSynthesizer setParameter:@"sample_rate" value:@"8000"];*/
+    
+    [_iFlySpeechSynthesizer startSpeaking:_textView.text];
+    NSLog(@"SpeechSynthesize start------");
 }
 
 //带UI合成 delegate
-
 
 - (void) onEnd:(IFlySynthesizerView *)iFlySynthesizerView error:(IFlySpeechError *)error
 {
@@ -98,17 +117,7 @@
     [_readButton setTitle:[NSString stringWithFormat:@"正在朗读 %d%%", progress] forState:UIControlStateDisabled];
 }
 
-//无UI合成
-- (void) onReadWithOutUI:(id) sender{
-    _readButton.enabled=NO;
-    /*[_iFlySpeechSynthesizer setParameter:@"speed" value:@"60"];
-    [_iFlySpeechSynthesizer setParameter:@"volume" value:@"100"];
-    [_iFlySpeechSynthesizer setParameter:@"voice_name" value:@"xiaoyu"];
-    [_iFlySpeechSynthesizer setParameter:@"sample_rate" value:@"8000"];*/
-    
-    [_iFlySpeechSynthesizer startSpeaking:_textView.text];
-    NSLog(@"SpeechSynthesize start------");
-}
+
 
 
 //识别
