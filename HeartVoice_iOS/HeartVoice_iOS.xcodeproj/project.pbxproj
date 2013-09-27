@@ -163,6 +163,11 @@
 				CLASSPREFIX = HV;
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = zhuchen;
+				TargetAttributes = {
+					4900AC5017F1739F004851FB = {
+						DevelopmentTeam = 7744Y4CF3X;
+					};
+				};
 			};
 			buildConfigurationList = 4900AC4C17F1739F004851FB /* Build configuration list for PBXProject "HeartVoice_iOS" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -291,6 +296,8 @@
 		4900AC7517F1739F004851FB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
@@ -299,6 +306,7 @@
 				GCC_PREFIX_HEADER = "HeartVoice_iOS/HeartVoice_iOS-Prefix.pch";
 				INFOPLIST_FILE = "HeartVoice_iOS/HeartVoice_iOS-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -306,6 +314,8 @@
 		4900AC7617F1739F004851FB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
@@ -314,6 +324,7 @@
 				GCC_PREFIX_HEADER = "HeartVoice_iOS/HeartVoice_iOS-Prefix.pch";
 				INFOPLIST_FILE = "HeartVoice_iOS/HeartVoice_iOS-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -337,6 +348,7 @@
 				4900AC7617F1739F004851FB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

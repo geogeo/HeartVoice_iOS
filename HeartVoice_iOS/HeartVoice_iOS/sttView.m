@@ -22,7 +22,7 @@
         
         //set and add textView
         _textView =[[UITextView alloc] initWithFrame:CGRectMake(10, 10, 300, 190)];
-        _textView.font=[UIFont boldSystemFontOfSize:17];
+        _textView.font=[UIFont boldSystemFontOfSize:30];
         _textView.backgroundColor = [UIColor grayColor];
         _textView.returnKeyType=UIReturnKeyDone;
         _textView.delegate = self;
@@ -42,7 +42,8 @@
         _readButton.frame = CGRectMake(10,205,300,44);
         _readButton.titleLabel.font = [UIFont boldSystemFontOfSize:16];
         [_readButton setTitle:@"朗读" forState:UIControlStateNormal];
-        [_readButton addTarget:self action:@selector(onRead:) forControlEvents:UIControlEventTouchUpInside];
+        //[_readButton addTarget:self action:@selector(onRead:) forControlEvents:UIControlEventTouchUpInside];
+        [_readButton addTarget:self action:@selector(onReadWithOutUI:) forControlEvents:UIControlEventTouchUpInside];
         [self addSubview:_readButton];
         
         //set iFlyRecognizerView
@@ -54,6 +55,11 @@
         //set iFlySynthesizerView
         _iFlySynthesizerView = [[IFlySynthesizerView alloc] initWithOrigin:CGPointMake(10, 60) params:initString];
         _iFlySynthesizerView.delegate=self;
+        
+        //set iFlySynthesizer
+        _iFlySpeechSynthesizer = [IFlySpeechSynthesizer createWithParams:initString delegate:self] ;
+        
+        //_iFlySynthesizer.delegate=self;
     }
     return self;
 }
@@ -72,6 +78,40 @@
     _textView.text = text;
 }
 
+//带UI合成 delegate
+
+
+- (void) onEnd:(IFlySynthesizerView *)iFlySynthesizerView error:(IFlySpeechError *)error
+{
+    _readButton.enabled = YES;
+    //NSLog(@"synthesize over");
+}
+
+- (void) onBufferProress:(IFlySynthesizerView *)iFlySynthesizerView progress:(int)progress
+{
+    //NSLog(@"bufferProgress:%d",progress);
+}
+
+- (void) onPlayProress:(IFlySynthesizerView *)iFlySynthesizerView progress:(int)progress
+{
+    //NSLog(@"playProgress:%d",progress);
+    [_readButton setTitle:[NSString stringWithFormat:@"正在朗读 %d%%", progress] forState:UIControlStateDisabled];
+}
+
+//无UI合成
+- (void) onReadWithOutUI:(id) sender{
+    _readButton.enabled=NO;
+    /*[_iFlySpeechSynthesizer setParameter:@"speed" value:@"60"];
+    [_iFlySpeechSynthesizer setParameter:@"volume" value:@"100"];
+    [_iFlySpeechSynthesizer setParameter:@"voice_name" value:@"xiaoyu"];
+    [_iFlySpeechSynthesizer setParameter:@"sample_rate" value:@"8000"];*/
+    
+    [_iFlySpeechSynthesizer startSpeaking:_textView.text];
+    NSLog(@"SpeechSynthesize start------");
+}
+
+
+//识别
 - (void) onBegin:(id) sender
 {
     _textView.text = nil;
@@ -83,31 +123,7 @@
     [_iFlyRecognizerView start];
 }
 
-//合成
-- (void) onRead:(id) serder{
-    _readButton.enabled = NO;
-    [_iFlySynthesizerView startSpeaking:_textView.text];
-}
 
-- (void) onEnd:(IFlySynthesizerView *)iFlySynthesizerView error:(IFlySpeechError *)error
-{
-    _readButton.enabled = YES;
-    NSLog(@"synthesize over");
-    
-}
-
-- (void) onBufferProress:(IFlySynthesizerView *)iFlySynthesizerView progress:(int)progress
-{
-    NSLog(@"bufferProgress:%d",progress);
-}
-
-- (void) onPlayProress:(IFlySynthesizerView *)iFlySynthesizerView progress:(int)progress
-{
-    NSLog(@"playProgress:%d",progress);
-}
-
-
-//识别
 - (void) onResult:(IFlyRecognizerView *)iFlyRecognizerView theResult:(NSArray *)resultArray
 {
     NSMutableString *result = [[NSMutableString alloc] init];
@@ -132,15 +148,13 @@
             
             [textView resignFirstResponder];
             textView.font=[UIFont boldSystemFontOfSize:30];
-
-            
             return NO;
         }    
     return YES; 
 }
 
 - (void) textViewDidBeginEditing:(UITextView *)textView{
-    textView.font=[UIFont boldSystemFontOfSize:17];
+    textView.font=[UIFont boldSystemFontOfSize:16];
 
 }
 
