@@ -87,6 +87,7 @@
 - (void) onClear:(id)sender
 {
     _textView.text = Nil;
+    [_textView becomeFirstResponder];
     
 }
 
