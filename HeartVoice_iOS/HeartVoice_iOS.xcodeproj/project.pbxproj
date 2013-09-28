@@ -16,7 +16,6 @@
 		4900AC6717F1739F004851FB /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 4900AC6617F1739F004851FB /* Default.png */; };
 		4900AC6917F1739F004851FB /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4900AC6817F1739F004851FB /* Default@2x.png */; };
 		4900AC6B17F1739F004851FB /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4900AC6A17F1739F004851FB /* Default-568h@2x.png */; };
-		4900AC6E17F1739F004851FB /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4900AC6C17F1739F004851FB /* MainStoryboard.storyboard */; };
 		4900AC7117F1739F004851FB /* HVViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4900AC7017F1739F004851FB /* HVViewController.m */; };
 		4900AC7817F40482004851FB /* iflyMSC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4900AC7717F40482004851FB /* iflyMSC.framework */; };
 		4900AC7E17F44341004851FB /* sttView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4900AC7D17F44340004851FB /* sttView.m */; };
@@ -25,6 +24,7 @@
 		4900AC8E17F45189004851FB /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4900AC8D17F45189004851FB /* AudioToolbox.framework */; };
 		4900AC9017F45591004851FB /* icon 114.png in Resources */ = {isa = PBXBuildFile; fileRef = 4900AC8F17F45591004851FB /* icon 114.png */; };
 		4900AC9217F455AD004851FB /* icon 57.png in Resources */ = {isa = PBXBuildFile; fileRef = 4900AC9117F455AD004851FB /* icon 57.png */; };
+		497E4B7A17F5CA38002E9DDC /* HVFUSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 497E4B7917F5CA38002E9DDC /* HVFUSViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,7 +41,6 @@
 		4900AC6617F1739F004851FB /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		4900AC6817F1739F004851FB /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		4900AC6A17F1739F004851FB /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		4900AC6D17F1739F004851FB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		4900AC6F17F1739F004851FB /* HVViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HVViewController.h; sourceTree = "<group>"; };
 		4900AC7017F1739F004851FB /* HVViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HVViewController.m; sourceTree = "<group>"; };
 		4900AC7717F40482004851FB /* iflyMSC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = iflyMSC.framework; sourceTree = "<group>"; };
@@ -52,6 +51,8 @@
 		4900AC8D17F45189004851FB /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		4900AC8F17F45591004851FB /* icon 114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon 114.png"; sourceTree = "<group>"; };
 		4900AC9117F455AD004851FB /* icon 57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon 57.png"; sourceTree = "<group>"; };
+		497E4B7817F5CA38002E9DDC /* HVFUSViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HVFUSViewController.h; sourceTree = "<group>"; };
+		497E4B7917F5CA38002E9DDC /* HVFUSViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HVFUSViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,9 +111,10 @@
 			children = (
 				4900AC6317F1739F004851FB /* HVAppDelegate.h */,
 				4900AC6417F1739F004851FB /* HVAppDelegate.m */,
-				4900AC6C17F1739F004851FB /* MainStoryboard.storyboard */,
 				4900AC6F17F1739F004851FB /* HVViewController.h */,
 				4900AC7017F1739F004851FB /* HVViewController.m */,
+				497E4B7817F5CA38002E9DDC /* HVFUSViewController.h */,
+				497E4B7917F5CA38002E9DDC /* HVFUSViewController.m */,
 				4900AC7C17F44340004851FB /* sttView.h */,
 				4900AC7D17F44340004851FB /* sttView.m */,
 				4900AC5B17F1739F004851FB /* Supporting Files */,
@@ -195,7 +197,6 @@
 				4900AC6717F1739F004851FB /* Default.png in Resources */,
 				4900AC6917F1739F004851FB /* Default@2x.png in Resources */,
 				4900AC6B17F1739F004851FB /* Default-568h@2x.png in Resources */,
-				4900AC6E17F1739F004851FB /* MainStoryboard.storyboard in Resources */,
 				4900AC9017F45591004851FB /* icon 114.png in Resources */,
 				4900AC9217F455AD004851FB /* icon 57.png in Resources */,
 			);
@@ -209,6 +210,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4900AC6117F1739F004851FB /* main.m in Sources */,
+				497E4B7A17F5CA38002E9DDC /* HVFUSViewController.m in Sources */,
 				4900AC6517F1739F004851FB /* HVAppDelegate.m in Sources */,
 				4900AC7117F1739F004851FB /* HVViewController.m in Sources */,
 				4900AC7E17F44341004851FB /* sttView.m in Sources */,
@@ -224,14 +226,6 @@
 				4900AC5E17F1739F004851FB /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		4900AC6C17F1739F004851FB /* MainStoryboard.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4900AC6D17F1739F004851FB /* en */,
-			);
-			name = MainStoryboard.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

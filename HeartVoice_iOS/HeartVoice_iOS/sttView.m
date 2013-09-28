@@ -6,9 +6,10 @@
 //  Copyright (c) 2013 zhuchen. All rights reserved.
 //
 
-#import "sttView.h"
 #import <QuartzCore/QuartzCore.h>
 #import "iflyMSC/IFlySpeechError.h"
+#import "sttView.h"
+
 
 
 @implementation sttView
@@ -48,7 +49,7 @@
         
         //set and add clear Button
         _clearButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-        _clearButton.frame = CGRectMake(10, 205, 145, 44);
+        _clearButton.frame = CGRectMake(10, 205, 72, 44);
         _clearButton.titleLabel.font=[UIFont boldSystemFontOfSize:16];
         [_clearButton setTitle:@"清除" forState:UIControlStateNormal];
         [_clearButton addTarget:self action:@selector(onClear:) forControlEvents:UIControlEventTouchUpInside];
@@ -68,6 +69,8 @@
         _iFlySpeechSynthesizer = [IFlySpeechSynthesizer createWithParams:initString delegate:self] ;
         
         //_iFlySynthesizer.delegate=self;
+        //accept sentence
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(addSentence:) name:@"addSentence" object:nil];
     }
     return self;
 }
@@ -84,6 +87,7 @@
 - (void) onClear:(id)sender
 {
     _textView.text = Nil;
+    
 }
 
 //无UI合成
@@ -117,6 +121,38 @@
     [_readButton setTitle:[NSString stringWithFormat:@"正在朗读 %d%%", progress] forState:UIControlStateDisabled];
 }
 
+- (void) onBufferProgress:(int)progress message:(NSString *)msg{
+    
+}
+
+- (void) onSpeakBegin{
+    
+}
+
+- (void) onSpeakProgress:(int)progress{
+    
+}
+
+- (void) onSpeakPaused{
+    
+}
+
+- (void) onSpeakResumed{
+    
+}
+
+- (void) onCompleted:(IFlySpeechError *)error{
+    
+}
+
+- (void) onSpeakCancel{
+    
+}
+
+//添加句子
+-(void) addSentence:(NSNotification *) notification{
+    _textView.text = [notification object];
+}
 
 
 

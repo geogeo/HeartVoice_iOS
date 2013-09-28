@@ -8,10 +8,13 @@
 
 #import <UIKit/UIKit.h>
 #import "sttView.h"
+#import "HVFUSViewController.h"
 
 
 @interface HVViewController : UIViewController{
-    UIView *_sttView;
+    UIView               *_sttView;
+    UIButton             *_FUSButton;
+    HVFUSViewController  *_FUSViewController;
 }
 
 @end

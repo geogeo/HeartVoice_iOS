@@ -22,7 +22,19 @@
     CGRect frame = [[UIScreen mainScreen] applicationFrame];
     _sttView = [[sttView alloc] initWithFrame:frame];
     self.title = @"心声";
+    
+    //add FUSbutton
+    _FUSButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    _FUSButton.frame =CGRectMake(85, 205, 72, 44);
+    [_FUSButton setTitle:@"常用语" forState:UIControlStateNormal];
+    [self.view addSubview:_FUSButton];
+    [_FUSButton addTarget:self action:@selector(onPushFUSViewController:) forControlEvents:UIControlEventTouchUpInside];
+}
 
+- (void)onPushFUSViewController:(id)sender{
+    //add FUSController
+    _FUSViewController = [HVFUSViewController alloc];
+    [self.navigationController pushViewController:_FUSViewController animated:TRUE];
 }
 
 - (void)didReceiveMemoryWarning
