@@ -24,6 +24,13 @@
 		4900AC9017F45591004851FB /* icon 114.png in Resources */ = {isa = PBXBuildFile; fileRef = 4900AC8F17F45591004851FB /* icon 114.png */; };
 		4900AC9217F455AD004851FB /* icon 57.png in Resources */ = {isa = PBXBuildFile; fileRef = 4900AC9117F455AD004851FB /* icon 57.png */; };
 		497E4B7A17F5CA38002E9DDC /* HVFUSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 497E4B7917F5CA38002E9DDC /* HVFUSViewController.m */; };
+		497E4C1017F887C2002E9DDC /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 497E4C0F17F887C2002E9DDC /* libsqlite3.dylib */; };
+		497E4C1D17F888BB002E9DDC /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 497E4C1317F888BB002E9DDC /* FMDatabase.m */; };
+		497E4C1E17F888BB002E9DDC /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 497E4C1517F888BB002E9DDC /* FMDatabaseAdditions.m */; };
+		497E4C1F17F888BB002E9DDC /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 497E4C1717F888BB002E9DDC /* FMDatabasePool.m */; };
+		497E4C2017F888BB002E9DDC /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 497E4C1917F888BB002E9DDC /* FMDatabaseQueue.m */; };
+		497E4C2217F888BB002E9DDC /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 497E4C1C17F888BB002E9DDC /* FMResultSet.m */; };
+		497E4C2717F889A6002E9DDC /* HVSentence.m in Sources */ = {isa = PBXBuildFile; fileRef = 497E4C2617F889A6002E9DDC /* HVSentence.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +57,19 @@
 		4900AC9117F455AD004851FB /* icon 57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon 57.png"; sourceTree = "<group>"; };
 		497E4B7817F5CA38002E9DDC /* HVFUSViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HVFUSViewController.h; sourceTree = "<group>"; };
 		497E4B7917F5CA38002E9DDC /* HVFUSViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HVFUSViewController.m; sourceTree = "<group>"; };
+		497E4C0F17F887C2002E9DDC /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		497E4C1217F888BB002E9DDC /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		497E4C1317F888BB002E9DDC /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		497E4C1417F888BB002E9DDC /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		497E4C1517F888BB002E9DDC /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		497E4C1617F888BB002E9DDC /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		497E4C1717F888BB002E9DDC /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		497E4C1817F888BB002E9DDC /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		497E4C1917F888BB002E9DDC /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		497E4C1B17F888BB002E9DDC /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		497E4C1C17F888BB002E9DDC /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		497E4C2517F889A6002E9DDC /* HVSentence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HVSentence.h; sourceTree = "<group>"; };
+		497E4C2617F889A6002E9DDC /* HVSentence.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HVSentence.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				497E4C1017F887C2002E9DDC /* libsqlite3.dylib in Frameworks */,
 				4900AC8E17F45189004851FB /* AudioToolbox.framework in Frameworks */,
 				4900AC8A17F4512D004851FB /* QuartzCore.framework in Frameworks */,
 				4900AC8817F45121004851FB /* SystemConfiguration.framework in Frameworks */,
@@ -92,6 +113,7 @@
 		4900AC5317F1739F004851FB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				497E4C0F17F887C2002E9DDC /* libsqlite3.dylib */,
 				4900AC8D17F45189004851FB /* AudioToolbox.framework */,
 				4900AC7717F40482004851FB /* iflyMSC.framework */,
 				4900AC8917F4512D004851FB /* QuartzCore.framework */,
@@ -108,10 +130,8 @@
 			children = (
 				4900AC6317F1739F004851FB /* HVAppDelegate.h */,
 				4900AC6417F1739F004851FB /* HVAppDelegate.m */,
-				4900AC6F17F1739F004851FB /* HVViewController.h */,
-				4900AC7017F1739F004851FB /* HVViewController.m */,
-				497E4B7817F5CA38002E9DDC /* HVFUSViewController.h */,
-				497E4B7917F5CA38002E9DDC /* HVFUSViewController.m */,
+				497E4C2317F88975002E9DDC /* ViewController */,
+				497E4C2417F88988002E9DDC /* Model */,
 				4900AC5B17F1739F004851FB /* Supporting Files */,
 			);
 			path = HeartVoice_iOS;
@@ -120,6 +140,7 @@
 		4900AC5B17F1739F004851FB /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				497E4C1117F888BB002E9DDC /* FMDB */,
 				4900AC5C17F1739F004851FB /* HeartVoice_iOS-Info.plist */,
 				4900AC5D17F1739F004851FB /* InfoPlist.strings */,
 				4900AC6017F1739F004851FB /* main.m */,
@@ -129,6 +150,43 @@
 				4900AC6A17F1739F004851FB /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		497E4C1117F888BB002E9DDC /* FMDB */ = {
+			isa = PBXGroup;
+			children = (
+				497E4C1217F888BB002E9DDC /* FMDatabase.h */,
+				497E4C1317F888BB002E9DDC /* FMDatabase.m */,
+				497E4C1417F888BB002E9DDC /* FMDatabaseAdditions.h */,
+				497E4C1517F888BB002E9DDC /* FMDatabaseAdditions.m */,
+				497E4C1617F888BB002E9DDC /* FMDatabasePool.h */,
+				497E4C1717F888BB002E9DDC /* FMDatabasePool.m */,
+				497E4C1817F888BB002E9DDC /* FMDatabaseQueue.h */,
+				497E4C1917F888BB002E9DDC /* FMDatabaseQueue.m */,
+				497E4C1B17F888BB002E9DDC /* FMResultSet.h */,
+				497E4C1C17F888BB002E9DDC /* FMResultSet.m */,
+			);
+			path = FMDB;
+			sourceTree = "<group>";
+		};
+		497E4C2317F88975002E9DDC /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				4900AC6F17F1739F004851FB /* HVViewController.h */,
+				4900AC7017F1739F004851FB /* HVViewController.m */,
+				497E4B7817F5CA38002E9DDC /* HVFUSViewController.h */,
+				497E4B7917F5CA38002E9DDC /* HVFUSViewController.m */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		497E4C2417F88988002E9DDC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				497E4C2517F889A6002E9DDC /* HVSentence.h */,
+				497E4C2617F889A6002E9DDC /* HVSentence.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -205,9 +263,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				4900AC6117F1739F004851FB /* main.m in Sources */,
+				497E4C2017F888BB002E9DDC /* FMDatabaseQueue.m in Sources */,
 				497E4B7A17F5CA38002E9DDC /* HVFUSViewController.m in Sources */,
 				4900AC6517F1739F004851FB /* HVAppDelegate.m in Sources */,
+				497E4C2217F888BB002E9DDC /* FMResultSet.m in Sources */,
+				497E4C1D17F888BB002E9DDC /* FMDatabase.m in Sources */,
+				497E4C1F17F888BB002E9DDC /* FMDatabasePool.m in Sources */,
 				4900AC7117F1739F004851FB /* HVViewController.m in Sources */,
+				497E4C2717F889A6002E9DDC /* HVSentence.m in Sources */,
+				497E4C1E17F888BB002E9DDC /* FMDatabaseAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

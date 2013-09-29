@@ -7,9 +7,11 @@
 //
 
 #import "HVFUSViewController.h"
+#import "HVSentence.h"
 
 @interface HVFUSViewController (){
     NSMutableArray *_list;
+    HVSentence * _sentence;
 }
 @end
 
@@ -30,11 +32,12 @@
 {
     [super viewDidLoad];
     
-    
     [self setTitle:@"常用语"];
-    _list=[NSMutableArray arrayWithObjects:@"第一句话",@"第二句话", nil];
+
+    _sentence = [HVSentence alloc];
+    [_sentence initDB];
+    _list = [_sentence getSentencesList];
     
-    self.notNib_tableView = [[UITableView alloc]initWithFrame:self.view.frame style:UITableViewStylePlain];
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"Cell"];
 
     // Uncomment the following line to preserve selection between presentations.
@@ -81,6 +84,8 @@
     return cell;
 }
 
+
+//发送通知，告知被选中列得文字
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     NSInteger row = [indexPath row];
 

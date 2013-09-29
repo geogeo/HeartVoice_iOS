@@ -10,8 +10,4 @@
 
 
 @interface HVFUSViewController : UITableViewController
-
-@property (retain,nonatomic) UITableView *notNib_tableView;
-
-
-@end    
+@end
