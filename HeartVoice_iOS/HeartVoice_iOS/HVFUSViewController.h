@@ -8,9 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface HVFUSViewController : UITableViewController{
-   NSMutableArray *_list;
-}
+
+@interface HVFUSViewController : UITableViewController
+
 @property (retain,nonatomic) UITableView *notNib_tableView;
 
 

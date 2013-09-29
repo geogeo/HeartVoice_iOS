@@ -8,8 +8,9 @@
 
 #import "HVFUSViewController.h"
 
-@interface HVFUSViewController ()
-
+@interface HVFUSViewController (){
+    NSMutableArray *_list;
+}
 @end
 
 @implementation HVFUSViewController

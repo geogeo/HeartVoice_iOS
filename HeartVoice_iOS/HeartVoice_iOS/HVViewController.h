@@ -7,14 +7,33 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "sttView.h"
 #import "HVFUSViewController.h"
 
+#import "iflyMSC/IFlyRecognizerView.h"
+#import "iflyMSC/IFlyRecognizerViewDelegate.h"
 
-@interface HVViewController : UIViewController{
-    UIView               *_sttView;
-    UIButton             *_FUSButton;
-    HVFUSViewController  *_FUSViewController;
+#import "iflyMSC/IFlySynthesizerView.h"
+#import "iflyMSC/IFlySynthesizerViewDelegate.h"
+
+
+
+#import "iflyMSC/IFlySpeechSynthesizer.h"
+#import "iflyMSC/IFlySpeechSynthesizerDelegate.h"
+
+#define APPID @"523e8a23"
+
+
+@interface HVViewController : UIViewController <IFlyRecognizerViewDelegate,IFlySynthesizerViewDelegate,  IFlySpeechSynthesizerDelegate,UITextViewDelegate>{
+
+
+//@interface HVViewController : UIViewController <IFlyRecognizerViewDelegate, IFlySpeechSynthesizerDelegate, UITextViewDelegate>
+
+//@interface HVViewController : UIViewController <IFlyRecognizerViewDelegate, IFlySynthesizerViewDelegate, UITextViewDelegate>{
+    
+    IFlyRecognizerView  *_iFlyRecognizerView;
+    IFlySynthesizerView *_iFlySynthesizerView;
+    IFlySpeechSynthesizer *_iFlySpeechSynthesizer;
+    
 }
 
 @end
