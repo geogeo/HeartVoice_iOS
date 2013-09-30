@@ -20,7 +20,6 @@
     NSFileManager * fileManager = [NSFileManager defaultManager];
 
     if ([fileManager fileExistsAtPath:_path] == NO) {
-
         if ([db open]) {
             //create table
             NSString *sqlCreate = @"CREATE TABLE 'Sentences' ('id' INTEGER PRIMARY KEY AUTOINCREMENT  NOT NULL , 'sentence')";
@@ -69,6 +68,44 @@
     }
     
     return sentencesList;
+}
+
+
+- (void) addSentence: (NSString*) sentence{
+
+    FMDatabase * db = [FMDatabase databaseWithPath:_path];
+    if ([db open]) {
+        NSString * sql = @"insert into Sentences (sentence) values(?) ";
+        [db executeUpdate:sql, sentence];
+        [db close];
+    }
+    
+    NSLog(@"add sentence to model");
+}
+
+
+- (void) removeSentence: (NSString *) sentence{
+    NSLog(@"remove begin");
+    FMDatabase * db = [FMDatabase databaseWithPath:_path];
+    //FMDatabase * tempDb = [FMDatabase databaseWithPath:NULL];
+    //[tempDb open];
+    
+    
+    if ([db open]) {
+        
+        //NSString * getTempDb = @"select ROW_NUMBER() over(order by ID)  as rowid,* from Sentences";
+        //FMResultSet * rs = [db executeQuery:getTempDb];
+        
+        NSString * sqlDelete = [NSString stringWithFormat:@"delete from Sentences where sentence = '%@'",sentence];
+        BOOL res =[db executeUpdate:sqlDelete];
+        if (!res) {
+            NSLog(@"error when delete db table");
+        } else {
+            NSLog(@"success to delete db table");
+        }
+        [db close];
+    }
+    
 }
 
 @end

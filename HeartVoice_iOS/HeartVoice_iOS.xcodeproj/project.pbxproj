@@ -31,6 +31,7 @@
 		497E4C2017F888BB002E9DDC /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 497E4C1917F888BB002E9DDC /* FMDatabaseQueue.m */; };
 		497E4C2217F888BB002E9DDC /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 497E4C1C17F888BB002E9DDC /* FMResultSet.m */; };
 		497E4C2717F889A6002E9DDC /* HVSentence.m in Sources */ = {isa = PBXBuildFile; fileRef = 497E4C2617F889A6002E9DDC /* HVSentence.m */; };
+		497E4C2A17F970D1002E9DDC /* HVAddSentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 497E4C2917F970D1002E9DDC /* HVAddSentViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,6 +71,8 @@
 		497E4C1C17F888BB002E9DDC /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
 		497E4C2517F889A6002E9DDC /* HVSentence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HVSentence.h; sourceTree = "<group>"; };
 		497E4C2617F889A6002E9DDC /* HVSentence.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HVSentence.m; sourceTree = "<group>"; };
+		497E4C2817F970D1002E9DDC /* HVAddSentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HVAddSentViewController.h; sourceTree = "<group>"; };
+		497E4C2917F970D1002E9DDC /* HVAddSentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HVAddSentViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,6 +179,8 @@
 				4900AC7017F1739F004851FB /* HVViewController.m */,
 				497E4B7817F5CA38002E9DDC /* HVFUSViewController.h */,
 				497E4B7917F5CA38002E9DDC /* HVFUSViewController.m */,
+				497E4C2817F970D1002E9DDC /* HVAddSentViewController.h */,
+				497E4C2917F970D1002E9DDC /* HVAddSentViewController.m */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -269,6 +274,7 @@
 				497E4C2217F888BB002E9DDC /* FMResultSet.m in Sources */,
 				497E4C1D17F888BB002E9DDC /* FMDatabase.m in Sources */,
 				497E4C1F17F888BB002E9DDC /* FMDatabasePool.m in Sources */,
+				497E4C2A17F970D1002E9DDC /* HVAddSentViewController.m in Sources */,
 				4900AC7117F1739F004851FB /* HVViewController.m in Sources */,
 				497E4C2717F889A6002E9DDC /* HVSentence.m in Sources */,
 				497E4C1E17F888BB002E9DDC /* FMDatabaseAdditions.m in Sources */,

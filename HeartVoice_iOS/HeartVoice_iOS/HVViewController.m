@@ -98,7 +98,7 @@
     _iFlySpeechSynthesizer = [IFlySpeechSynthesizer createWithParams:initString delegate:self] ;
     
     //accept sentence-----------------------------------------------------------------
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(addSentence:) name:@"addSentence" object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onIncertSentence:) name:@"incertSentence" object:nil];
 /*
 */
 }
@@ -125,7 +125,7 @@
 }
 
 //插入常用语
--(void) addSentence:(NSNotification *) notification{
+-(void) onIncertSentence:(NSNotification *) notification{
     _textView.text = [notification object];
 }
 

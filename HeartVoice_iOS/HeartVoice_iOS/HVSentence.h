@@ -21,4 +21,8 @@
 
 - (NSMutableArray *) getSentencesList;
 
+- (void) addSentence: (NSString*) sentence;
+
+- (void) removeSentence: (NSString *) index;
+
 @end
