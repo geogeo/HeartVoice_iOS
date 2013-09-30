@@ -40,7 +40,10 @@
     //set and add textView
     _textView =[[UITextView alloc] initWithFrame:CGRectMake(10, 10, 300, 190)];
     _textView.font=[UIFont boldSystemFontOfSize:30];
-    _textView.backgroundColor = [UIColor grayColor];
+    //_textView.backgroundColor = [UIColor grayColor];
+    [[_textView layer] setBorderColor:[[UIColor grayColor] CGColor]];
+    [[_textView layer] setBorderWidth:1];
+    [[_textView layer] setCornerRadius:10];
     _textView.returnKeyType=UIReturnKeyDone;
     _textView.delegate = self;
     _textView.text=@"你好，我是一位聋人，请点下面的按钮对我说话。";

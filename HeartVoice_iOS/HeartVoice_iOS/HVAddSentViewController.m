@@ -40,8 +40,11 @@
     [self.view addSubview:_navigationBar];
     
     // textarea
-    _sentence = [[UITextView alloc] initWithFrame:CGRectMake(10, 50, 300, 80)];
+    _sentence = [[UITextView alloc] initWithFrame:CGRectMake(10, 50, 300, 160)];
     _sentence.font = [UIFont boldSystemFontOfSize:16];
+    [[_sentence layer] setBorderColor:[[UIColor grayColor] CGColor]];
+    [[_sentence layer] setBorderWidth:1];
+    [[_sentence layer] setCornerRadius:10];
     [self.view addSubview:_sentence];
     [_sentence becomeFirstResponder];
 
